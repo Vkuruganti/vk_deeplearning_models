@@ -1,0 +1,161 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2522 >>
+stream
+BT
+/F1 16 Tf
+1 0 0 1 50 760 Tm
+(vk_deeplearning_models - One-Page App Summary) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 736 Tm
+(What it is) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 720 Tm
+(A compact Python app that trains a feedforward neural network on MNIST digits.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 706 Tm
+(It uses stochastic gradient descent with backpropagation and sigmoid activations.) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 684 Tm
+(Who it's for) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 668 Tm
+(Primary persona: ML learners who want a minimal, readable neural-net training example.) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 646 Tm
+(What it does) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 630 Tm
+(- Loads MNIST data from ../data/mnist.pkl.gz using gzip + pickle.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 616 Tm
+(- Reshapes each image into a 784x1 input vector.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 602 Tm
+(- One-hot encodes training labels into 10x1 target vectors.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 588 Tm
+(- Builds a dense network from a layer-size list \(example: [784, 20, 10]\).) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 574 Tm
+(- Initializes biases and weights with Gaussian random values.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 560 Tm
+(- Trains with mini-batch SGD, backprop, and configurable epochs/batch size/eta.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 546 Tm
+(- Evaluates test predictions each epoch and prints accuracy counts.) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 524 Tm
+(How it works \(repo-evidence architecture\)) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 508 Tm
+(- run_network1.py orchestrates: load data, build Network, call SGD.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 494 Tm
+(- mnist_loader.py handles data IO and preprocessing for train/val/test splits.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 480 Tm
+(- network1.py contains model state, feedforward, SGD loop, backprop, evaluate.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 466 Tm
+(- Data flow: MNIST file -> wrapper transforms -> SGD mini-batches -> epoch metrics.) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 444 Tm
+(How to run \(minimal steps\)) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 428 Tm
+(1. Create Python env and install numpy \(dependency files: Not found in repo\).) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 414 Tm
+(2. Place dataset at ../data/mnist.pkl.gz relative to this repo root.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 400 Tm
+(3. Run: python3 run_network1.py) Tj
+ET
+BT
+/F1 12 Tf
+1 0 0 1 50 378 Tm
+(Not found in repo) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 362 Tm
+(- README, packaged data file, and dataset download/source instructions.) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 50 348 Tm
+(- CLI/config system, tests, and model checkpoint export path.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002814 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2884
+%%EOF
